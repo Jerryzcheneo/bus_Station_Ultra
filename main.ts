@@ -8,6 +8,7 @@ bluetooth.onBluetoothDisconnected(function () {
 let no_of_person = 0
 let start_sending = 0
 basic.showString("S")
+basic.pause(200)
 bluetooth.startUartService()
 start_sending = 0
 basic.forever(function () {
