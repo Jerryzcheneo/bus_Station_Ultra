@@ -4,6 +4,7 @@ bluetooth.onBluetoothConnected(function () {
 bluetooth.onBluetoothDisconnected(function () {
     start_sending = 0
     basic.showIcon(IconNames.No)
+    basic.pause(200)
 })
 let no_of_person = 0
 let start_sending = 0
