@@ -13,7 +13,6 @@ basic.pause(200)
 bluetooth.startUartService()
 start_sending = 0
 basic.forever(function () {
-    let People = 0
     no_of_person = 0
     if (sonar.ping(
     DigitalPin.P10,
@@ -32,6 +31,6 @@ basic.forever(function () {
     if (start_sending == 1) {
         bluetooth.uartWriteNumber(no_of_person)
     }
-    basic.showNumber(People)
+    basic.showNumber(no_of_person)
     basic.pause(200)
 })
